@@ -6,12 +6,12 @@ from ultralytics import YOLO
 # -------------------------
 # 設定
 # -------------------------
-video_path = "video/light.mp4"
-output_dir = "digit_dataset"
+video_path = "video/light2.mp4"
+output_dir = "digit_dataset2"
 img_size = (28, 28)  # CNN 輸入尺寸
 os.makedirs(output_dir, exist_ok=True)
 
-yolo_model = YOLO("Model/test.pt")
+yolo_model = YOLO("Model/traffic&count.pt")
 cap = cv2.VideoCapture(video_path)
 digit_count = 0
 
