@@ -25,7 +25,7 @@ print("圖片數量:", len(images))'''
 
 
 
-import os
+'''import os
 import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
@@ -90,10 +90,11 @@ model.fit(train_generator, epochs=epochs)
 # 6️⃣ 儲存模型
 # -------------------------
 model.save("cnn_digit_model_new.h5")
-print("訓練完成，模型已儲存為 cnn_digit_model_new.h5")
+print("訓練完成，模型已儲存為 cnn_digit_model_new.h5")'''
 
-
-
+from ultralytics import YOLO
+model = YOLO("Model/traffic&count.pt")
+print(model.model)
 
 
 
