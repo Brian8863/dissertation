@@ -5,11 +5,10 @@ from ultralytics import YOLO
 from tensorflow.keras.models import load_model
 import torch
 import time
-
 # -------------------------
 # 載入模型
 # -------------------------
-yolo_model = YOLO("Model/traffic&count.pt")
+yolo_model = YOLO("Model/traffic_1280.pt")
 cnn_model = load_model("cnn_digit_model_new.h5")
 img_size = (28, 28)
 
